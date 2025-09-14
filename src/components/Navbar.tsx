@@ -4,8 +4,7 @@ import { useState } from 'react';
 
 const Navbar = () => {
   const navItems = [
-    'All', 'Fresh', 'Mx Player', 'Mx Player', 'Mx Player', 'Mx Player',
-    'Mx Player', 'Mx Player', 'Mx Player', 'Mx Player',
+    'All', 'Home', 'Sell', "Today's deal", 'Customer service', 'Fresh', 'FOX B', 'shera plants', 'Yuccabe planters', 'fox a planters',
   ];
 
   return (
