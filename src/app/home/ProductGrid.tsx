@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const products = [
   { id: 1, title: 'Revamp your home in style', img: '/images/product-item.jpg' },
@@ -18,6 +19,7 @@ const ProductGrid = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {products.map((product) => (
           <div key={product.id} className="bg-white rounded shadow hover:shadow-lg transition p-4">
+          <Link href='./productdetails'>
             <Image
               src={product.img}
               alt={product.title}
@@ -27,6 +29,7 @@ const ProductGrid = () => {
             />
             <h4 className="mt-2 text-gray-800">{product.title}</h4>
             <button className="mt-2 text-green-600 text-sm">See all offers</button>
+          </Link>
           </div>
         ))}
       </div>

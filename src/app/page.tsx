@@ -1,10 +1,6 @@
 // app/page.tsx
 
-import Banner from "@/components/Banner";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import ProductGrid from "@/components/ProductGrid";
-import RelatedBanner from "@/components/RelatedBanner";
+import HomePage from "./home/page";
 
 // Metadata for the page, including the favicon
 export const metadata = {
@@ -19,11 +15,7 @@ export default function Home() {
   return (
     <div className="font-sans grid justify-items-center min-h-screen bg-[#f5f5f5]">
       <main className="flex flex-col w-full max-w-7xl">
-        <Header />
-        <Banner />
-        <ProductGrid />
-        <RelatedBanner />
-        <Footer />
+        <HomePage />
       </main>
     </div>
   );
