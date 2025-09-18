@@ -1,6 +1,7 @@
 // pages/cart.tsx
 
 'use client';
+import Link from 'next/link';
 import CartItem from './CartItem';
 import RelatedProducts from './RelatedProducts';
 
@@ -26,7 +27,7 @@ export default function CartPage() {
         <div className="border p-4 rounded-md mb-4">
           <p className="text-lg font-semibold">Subtotal ({items.reduce((s, i) => s + i.quantity, 0)} items): ₹{subtotal}</p>
           <button className="mt-4 w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">
-            Proceed to Buy
+             <Link href="./checkout"> Proceed to Buy</Link>
           </button>
         </div>
         <RelatedProducts />

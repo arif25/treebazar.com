@@ -22,14 +22,8 @@ export default function Dropdown() {
             <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
               Account settings
             </a>
-            <Link href="/signin">
-              <button className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                  Sign in
-              </button>
-            </Link>
-            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-              Lorem ipsum
-            </a>
+            <Link href="/signin" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign in</Link>
+            <Link href="/signup" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign Up</Link>
           </div>
         </div>
       )}

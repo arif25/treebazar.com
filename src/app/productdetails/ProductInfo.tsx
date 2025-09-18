@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // components/ProductInfo.tsx
 export default function ProductInfo() {
   return (
@@ -35,13 +37,13 @@ export default function ProductInfo() {
         <option>Quantity: 2</option>
       </select>
 
-      <div className="space-y-2">
-        <button className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">
-          Add to Cart
-        </button>
-        <button className="w-full bg-emerald-500 text-white py-2 rounded hover:bg-emerald-600">
-          Buy Now
-        </button>
+      <div className="space-y-2">        
+          <button className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">
+            <Link href="./mycart">Add to Cart</Link>
+          </button>        
+          <button className="w-full bg-emerald-500 text-white py-2 rounded hover:bg-emerald-600">
+            <Link href="./checkout">Buy Now</Link>
+          </button>
       </div>
 
       <p className="text-sm text-gray-600 mt-4">
