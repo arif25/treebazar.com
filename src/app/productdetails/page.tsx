@@ -16,6 +16,8 @@ export default function Page() {
       <div className="max-w-[1220px] mx-auto flex flex-col md:flex-row gap-6">
         <ProductGallery />
         <ProductInfo />
+      </div>
+      <div className="max-w-[1220px] mx-auto">
         <ProductDetails />
         <FrequentlyBoughtTogether />
         <ProductList />
