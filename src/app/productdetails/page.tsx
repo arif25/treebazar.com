@@ -11,7 +11,7 @@ import ProductInfo from "./ProductInfo";
 
 export default function Page() {
   return (
-    <main className="max-w-6xl mx-auto px-4">
+    <main className="max-w-full mx-auto px-4">
       <Header />
       <div className="flex flex-col md:flex-row gap-6">
         <ProductGallery />
