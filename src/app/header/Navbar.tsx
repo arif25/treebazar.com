@@ -8,7 +8,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-gray-800 text-white p-2 w-[1220px] mx-auto">
+    <nav className="bg-gray-800 text-white p-2 min-w-[1220px] mx-auto">
       <div className="flex items-center space-x-4 overflow-x-auto scrollbar-hide">
         {navItems.map((item, index) => (
           <button

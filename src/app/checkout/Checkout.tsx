@@ -3,7 +3,7 @@ import React from 'react';
 
 const CheckoutPage: React.FC = () => {
   return (
-    <div className=" bg-gray-50 p-6">
+    <div className="  p-6">
       <div className="max-w-5xl mx-auto bg-white p-6 rounded-md shadow-md space-y-6">
         {/* Delivery Info */}
         <div className="border p-4 rounded-md">

@@ -10,7 +10,7 @@ export default function SignInForm() {
   const [rememberMe, setRememberMe] = useState(false);
 
   return (
-    <div className="w-full max-w-md bg-white p-8 rounded-md shadow border">
+    <div className="w-full max-w-md bg-white p-8 rounded-md shadow border-gray-50">
       <h2 className="text-xl font-semibold mb-6">Sign-In</h2>
 
       <label className="block text-sm font-medium mb-1">Email or mobile number</label>
@@ -46,24 +46,20 @@ export default function SignInForm() {
       </button>
 
       <p className="text-sm text-gray-700 text-center">
-        New to Tree Bazar?{' '}
+        New to Tree Bazar?
 
         <Link href="./signup" className="text-blue-600 hover:underline">Create your account</Link>
-
-        {/* <a href="/account" className="text-blue-600 hover:underline">
-          Create your account
-        </a> */}
       </p>
 
       <p className="text-xs text-gray-500 mt-4 border-t pt-4 text-center">
-        By signing in, you agree to Amazon’s{' '}
-        <a href="#" className="text-blue-600 hover:underline">
+        By signing in, you agree to Treebazaar
+        <Link href="termsandconditions" className="text-blue-600 hover:underline">
           Conditions of Use
-        </a>{' '}
-        and{' '}
-        <a href="#" className="text-blue-600 hover:underline">
+        </Link>
+        and
+        <Link href="privacypolicy" className="text-blue-600 hover:underline">
           Privacy Policy
-        </a>.
+        </Link>.
       </p>
     </div>
   );

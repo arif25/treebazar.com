@@ -4,12 +4,14 @@ import Image from 'next/image';
 import Dropdown from './Dropdown';
 import SearchBar from './SearchBar';
 import Link from 'next/link';
+import Bodybg from '../assets/bodybg';
 
 
 const Header = () => {
   return (
     <>
-      <header className="bg-[#131921] shadow w-[1220px] mx-auto">
+      <Bodybg />
+      <header className="bg-[#131921] shadow min-w-[1220px] mx-auto">
         <div className="w-[1220px] mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-green-600">
             <Link href="./home">

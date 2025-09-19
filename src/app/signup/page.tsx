@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import SignupHeader from './SignupHeader';
+import Bodybg from '../assets/bodybg';
 
 export default function CreateAccountForm() {
   const [mobile, setMobile] = useState('');
@@ -17,9 +18,10 @@ export default function CreateAccountForm() {
 
   return (
     <>
-    <SignupHeader />
-      <div className="min-h-screen bg-white flex flex-col items-center justify-start py-10">
-        <div className="w-full max-w-md border rounded-md shadow-sm p-6">
+      <Bodybg />
+      <div className="min-h-screen flex flex-col items-center justify-start py-10">
+       <SignupHeader />
+        <div className=" w-full max-w-md border-gray-50 rounded-md shadow-sm p-6">
           <h2 className="text-xl font-semibold mb-6">Create Account</h2>
 
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -82,44 +84,32 @@ export default function CreateAccountForm() {
             </div>
 
             {/* Submit Button */}
-            <button
-              type="submit"
-              className="w-full bg-green-600 text-white rounded-md py-2 font-medium hover:bg-green-700"
-            >
+            <button type="submit" className="w-full bg-green-600 text-white rounded-md py-2 font-medium hover:bg-green-700" >
               Verify mobile number
             </button>
           </form>
 
           {/* Sign in */}
           <p className="mt-4 text-sm">
-            Already a customer?{' '}
-
+            Already a customer?
             <Link href="./signin" className="text-blue-600 hover:underline">Sign in instead</Link>
-
-            {/* <a href="#" className="text-blue-600 hover:underline">
-              Sign in instead
-            </a> */}
           </p>
-
-          {/* Legal */}
           <p className="text-xs text-gray-500 mt-4">
             By creating an account or{' '}
             <a href="#" className="text-blue-600 hover:underline">
               logging in
             </a>
-            , you agree to Amazon’s{' '}
-            <a href="#" className="text-blue-600 hover:underline">
+            , you agree to Treebazaar{' '}
+            <Link href="/termsandconditions" className="text-blue-600 hover:underline">
               Conditions of Use
-            </a>{' '}
+            </Link>
             and{' '}
-            <a href="#" className="text-blue-600 hover:underline">
+            <Link href="/privacypolicy" className="text-blue-600 hover:underline">
               Privacy Policy
-            </a>
+            </Link>
             .
           </p>
         </div>
-
-        {/* Footer */}
         <footer className="text-xs text-gray-500 mt-10 space-x-4">
           <a href="#" className="hover:underline">
             Conditions of Use
