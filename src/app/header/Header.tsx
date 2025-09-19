@@ -15,7 +15,7 @@ const Header = () => {
         <div className="min-w-full mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-green-600">
             <Link href="./home">
-              <Image src="/images/logo.svg" alt="logo" width={180} height={90} />
+              <Image src="/images/logo5whiteGreenleaf2.svg" alt="logo" width={180} height={90} />
             </Link>
           </div>
           <div>

@@ -7,7 +7,7 @@ export default function SignupHeader() {
         <div className='w-[1220px] mx-auto py-8 px-6 flex justify-center items-center'>
             {/* Logo */}
             <div className="flex items-center space-x-2">
-                <Link href="./home" className="w-[180px] h-[60px] relative"><Image src="/images/reglogo.svg" alt="Plant" fill className="object-contain" /></Link>
+                <Link href="./home" className="w-[180px] h-[60px] relative"><Image src="/images/logo5.svg" alt="Plant" fill className="object-contain" /></Link>
             </div>            
         </div>
     </div>
