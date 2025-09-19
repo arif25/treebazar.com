@@ -12,7 +12,7 @@ const Header = () => {
     <>
       <Bodybg />
       <header className="bg-[#131921] shadow min-w-full mx-auto">
-        <div className="w-[1220px] mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="min-w-full mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-green-600">
             <Link href="./home">
               <Image src="/images/logo.svg" alt="logo" width={180} height={90} />

@@ -38,7 +38,7 @@ const Footer = () => {
             <ul className="text-sm space-y-1">
                 <li>Your Account</li>
                 <li>Returns Centre</li>
-                <li>Recalls and Product Safety Alerts</li>
+                <li>Recalls and Product Safety Alerts</li> 
                 <li>100% Purchase Protection</li>
                 <li>Amazon App Download</li>
             </ul>
