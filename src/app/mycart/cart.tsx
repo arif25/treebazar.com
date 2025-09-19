@@ -15,7 +15,7 @@ export default function CartPage() {
   const subtotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0)
 
   return (
-    <div className="w-[1220px] mx-auto p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div className="w-[1220px] mx-auto bg-white p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
       <div className="lg:col-span-2">
         <h1 className="text-2xl font-bold mb-4">Shopping Cart</h1>
         {items.map(item => (

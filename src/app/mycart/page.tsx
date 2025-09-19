@@ -9,7 +9,9 @@ const page = ()=>{
     return(
         <div>
             <Header />
-            <CartPage />
+            <div className="bg-white mt-8 max-w-[1220px] mx-auto">
+                <CartPage />
+            </div>
             <Footer />
         </div>
     )

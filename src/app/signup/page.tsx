@@ -21,7 +21,7 @@ export default function CreateAccountForm() {
       <Bodybg />
       <div className="min-h-screen flex flex-col items-center justify-start py-10">
        <SignupHeader />
-        <div className=" w-full max-w-md border-gray-50 rounded-md shadow-sm p-6">
+        <div className=" w-full max-w-md bg-white border-gray-50 rounded-md shadow-sm p-6">
           <h2 className="text-xl font-semibold mb-6">Create Account</h2>
 
           <form onSubmit={handleSubmit} className="space-y-4">

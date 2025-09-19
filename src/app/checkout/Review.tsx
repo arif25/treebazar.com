@@ -36,9 +36,7 @@ const ReviewSection: React.FC = () => {
             </Link>
           </p>
 
-          <Link href="/cart">
-            <Link href='' className="text-blue-600 hover:underline">Back to cart</Link>
-          </Link>
+          <Link href="/cart" className="text-blue-600 hover:underline">Back to cart</Link>
         </div>
       </div>
     </div>

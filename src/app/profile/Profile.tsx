@@ -8,7 +8,7 @@ const Profile = () => {
   const [mobile, setMobile] = useState('+91 8888 8888 88');
 
   return (
-    <div className="w-[1220px] mx-auto p-6 space-y-6 bg-white">
+    <div className="w-[1220px] mx-auto p-6 space-y-6 bg-white mt-8"> 
       <h1 className="text-2xl font-semibold">Personal Information</h1>
 
       <div className="bg-white shadow-md p-6 rounded-lg space-y-4">

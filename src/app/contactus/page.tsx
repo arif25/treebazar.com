@@ -9,7 +9,9 @@ const page = () =>{
     return(
         <section>
             <Header />
-            <ContactOptions />
+            <div className="min-h-[500px]">
+                <ContactOptions />
+            </div>
             <Footer />
         </section>
     )
