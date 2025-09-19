@@ -13,13 +13,13 @@ export default function Page() {
   return (
     <main className="max-w-full mx-auto px-4">
       <Header />
-      <div className="flex flex-col md:flex-row gap-6">
+      <div className="max-w-[1220px] mx-auto flex flex-col md:flex-row gap-6">
         <ProductGallery />
         <ProductInfo />
+        <ProductDetails />
+        <FrequentlyBoughtTogether />
+        <ProductList />
       </div>
-      <ProductDetails />
-      <FrequentlyBoughtTogether />
-      <ProductList />
       <Footer />
     </main>
   );
