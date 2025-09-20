@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const Navbar = () => {
   const navItems = [
-    'All', 'Home', 'Sell', "Today's deal", 'Customer service', 'Fresh', 'FOX B', 'shera plants', 'Yuccabe planters', 'fox a planters',
+    'All', 'Home', 'Sell', "Today's deal", 'Customer service', 'Fresh', 'FOX B', 'shera plants', 'Yuccabe planters', 'fox a planters',, 'Sell', "Today's deal", 'Customer service', 'Fresh', 'FOX B', 'shera plants', 'Yuccabe planters',
   ];
 
   return (

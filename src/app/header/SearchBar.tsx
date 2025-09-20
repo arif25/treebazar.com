@@ -26,23 +26,6 @@ export default function SearchBar() {
         <option value="electronics">Electronics</option>
         <option value="fashion">Fashion</option>
       </select>
-
-      {/* Search input */}
-      {/* <input
-        type="text"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Select an option"
-        className="flex-grow px-4 py-2 text-sm outline-none"
-      /> */}
-
-      {/* Submit button */}
-      {/* <button
-        onClick={handleSearch}
-        className="bg-green-600 hover:bg-green-700 text-white px-4 flex items-center justify-center"
-      >
-        <FiSearch className="text-xl" />
-      </button> */}
       <Link href="productlisting" className="bg-green-600 hover:bg-green-700 text-white px-4 flex items-center justify-center">
         <FiSearch className="text-xl" />      
       </Link>
