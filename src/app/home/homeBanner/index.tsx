@@ -9,6 +9,12 @@ export default function HomeHeroBanner() {
     { src: '/images/banner-image-01.jpg', alt: 'Slide 1' },
     { src: '/images/banner-image-01.jpg', alt: 'Slide 2' },
     { src: '/images/banner-image-01.jpg', alt: 'Slide 3' },
+    { src: '/images/banner-image-01.jpg', alt: 'Slide 4' },
+    { src: '/images/banner-image-01.jpg', alt: 'Slide 5' },
+    { src: '/images/banner-image-01.jpg', alt: 'Slide 6' },
+    { src: '/images/banner-image-01.jpg', alt: 'Slide 7' },
+    { src: '/images/banner-image-01.jpg', alt: 'Slide 8' },
+    { src: '/images/banner-image-01.jpg', alt: 'Slide 9' },
   ];
 
   return (

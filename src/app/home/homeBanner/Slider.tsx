@@ -39,7 +39,7 @@ const SimpleSlider: React.FC<SimpleSliderProps> = ({ slides, interval = 4000, cl
   }, [interval, slides.length]);
 
   return (
-    <div className={`relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg ${className}`}>
+    <div className={`relative w-full max-w-[1220px] mx-auto overflow-hidden shadow-lg ${className}`}>
       {/* Slides wrapper with translateX */}
       <div
         className="flex transition-transform duration-[1500ms] ease-in-out"
