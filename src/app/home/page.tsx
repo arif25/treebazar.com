@@ -11,10 +11,8 @@ const HomePage = () =>{
     return(
         <section>
             <Header />
-
             <HomeHeroBanner />
-
-            <Banner />
+            {/* <Banner /> */}
             <ProductGrid />
             <RelatedBanner />
             <Footer />

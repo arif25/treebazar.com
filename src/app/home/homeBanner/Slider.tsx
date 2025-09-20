@@ -1,11 +1,10 @@
 'use client'
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 /**
  * SimpleSlider.tsx
- * A minimal responsive image slider using Next.js (TypeScript) + Tailwind CSS.
+ * A minimal responsive image slider with autoplay (slide effect) using Next.js (TypeScript) + Tailwind CSS.
  */
 
 interface Slide {
@@ -15,10 +14,11 @@ interface Slide {
 
 interface SimpleSliderProps {
   slides: Slide[];
+  interval?: number; // autoplay interval in ms
   className?: string;
 }
 
-const SimpleSlider: React.FC<SimpleSliderProps> = ({ slides, className = '' }) => {
+const SimpleSlider: React.FC<SimpleSliderProps> = ({ slides, interval = 4000, className = '' }) => {
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
@@ -29,17 +29,21 @@ const SimpleSlider: React.FC<SimpleSliderProps> = ({ slides, className = '' }) =
     setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
 
+  // Autoplay effect
+  useEffect(() => {
+    const timer = setInterval(nextSlide, interval);
+    return () => clearInterval(timer);
+  }, [interval, slides.length]);
+
   return (
-    <div className={`relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg ${className}`}>
-      {/* Slides */}
-      <div className="relative h-64 sm:h-96">
+    <div className={`relative w-full max-w-[1220px] mx-auto overflow-hidden rounded-xl shadow-lg ${className}`}>
+      {/* Slides wrapper with translateX */}
+      <div
+        className="flex transition-transform duration-700 ease-in-out"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
         {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-              index === current ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
+          <div key={index} className="relative w-full h-64 sm:h-96 flex-shrink-0">
             <Image
               src={slide.src}
               alt={slide.alt}
@@ -85,3 +89,4 @@ const SimpleSlider: React.FC<SimpleSliderProps> = ({ slides, className = '' }) =
 };
 
 export default SimpleSlider;
+
