@@ -49,7 +49,7 @@ export default function FrequentlyBoughtTogether() {
         {products.map((product) => (
           <div
             key={product.id}
-            className="border rounded shadow-sm overflow-hidden"
+            className="border border-[#ccc] rounded shadow-sm overflow-hidden"
           >
             <div className="relative w-full h-48 bg-gray-100">
               <Image

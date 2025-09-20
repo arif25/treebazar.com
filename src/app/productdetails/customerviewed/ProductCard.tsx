@@ -6,7 +6,7 @@ import { Product } from '../../types';
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   return (
-    <div className="border rounded-md shadow-sm p-4">
+    <div className="border border-[#ccc] rounded-md shadow-sm p-4">
       <img src={product.imageUrl} alt={product.title} className="w-full h-64 object-cover mb-4" />
       
       <h3 className="text-sm font-medium mb-1">{product.title}</h3>

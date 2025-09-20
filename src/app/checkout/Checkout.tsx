@@ -6,7 +6,7 @@ const CheckoutPage: React.FC = () => {
     <div className="  p-6">
       <div className="max-w-5xl mx-auto bg-white p-6 rounded-md shadow-md space-y-6">
         {/* Delivery Info */}
-        <div className="border p-4 rounded-md">
+        <div className="border border-[#ccc] p-4 rounded-md">
           <div className="flex justify-between items-start">
             <div>
               <p className="font-semibold">Delivering to SAYED ARIFUR RAHMAN</p>
@@ -20,11 +20,11 @@ const CheckoutPage: React.FC = () => {
         </div>
 
         {/* Payment Method */}
-        <div className="border p-4 rounded-md">
+        <div className="border border-[#ccc] p-4 rounded-md">
           <h2 className="text-lg font-semibold mb-4">Payment method</h2>
 
           <div className="space-y-4">
-            <div className="border-t pt-4">
+            <div className="border-t border-[#ccc] pt-4">
               <label className="flex items-start space-x-3">
                 <input type="radio" name="payment" className="mt-1" />
                 <div>
@@ -34,7 +34,7 @@ const CheckoutPage: React.FC = () => {
               </label>
             </div>
 
-            <div className="border-t pt-4">
+            <div className="border-t border-[#ccc] pt-4">
               <p className="font-semibold mb-2">CREDIT & DEBIT CARDS</p>
               <label className="flex items-start space-x-3">
                 <input type="radio" name="payment" className="mt-1" />

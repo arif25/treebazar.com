@@ -32,7 +32,7 @@ export default function ProductInfo() {
         <li><strong>Sunlight:</strong> Partial Sun</li>
       </ul>
 
-      <select className="border rounded px-2 py-1 mb-3">
+      <select className="border border-[#ccc] rounded px-2 py-1 mb-3">
         <option>Quantity: 1</option>
         <option>Quantity: 2</option>
       </select>

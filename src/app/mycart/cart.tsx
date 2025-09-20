@@ -15,7 +15,7 @@ export default function CartPage() {
   const subtotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0)
 
   return (
-    <div className="w-[1220px] mx-auto p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div className="w-[1220px] mx-auto p-8 grid grid-cols-1 lg:grid-cols-3 gap-8 shadow-md">
       <div className="lg:col-span-2">
         <h1 className="text-2xl font-bold mb-4">Shopping Cart</h1>
         {items.map(item => (
@@ -24,7 +24,7 @@ export default function CartPage() {
       </div>
 
       <div>
-        <div className="border p-4 rounded-md mb-4">
+        <div className="border border-[#ccc] p-4 rounded-md mb-4 shadow-md">
           <p className="text-lg font-semibold">Subtotal ({items.reduce((s, i) => s + i.quantity, 0)} items): ₹{subtotal}</p>
           <button className="mt-4 w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">
              <Link href="./checkout"> Proceed to Buy</Link>

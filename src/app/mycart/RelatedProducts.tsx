@@ -14,7 +14,7 @@ const related = [
 
 export default function RelatedProducts() {
   return (
-    <div className="border p-4 rounded-md">
+    <div className="border border-[#ccc] p-4 rounded-md shadow-md">
       <h3 className="font-semibold mb-3">Products related to items in your cart</h3>
       {related.map(item => (
         <div key={item.id} className="flex items-center mb-4">

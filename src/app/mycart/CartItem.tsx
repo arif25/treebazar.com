@@ -13,7 +13,7 @@ export default function CartItem({ title, price, quantity: initialQty, image }: 
   const [quantity, setQuantity] = useState(initialQty)
 
   return (
-    <div className="flex border-b py-4">
+    <div className="flex border-b border-[#ccc] py-4shadow-md py-3">
       <Image src={image} alt={title} width={150} height={150} className="rounded-md" />
       <div className="ml-4 flex-1">
         <h2 className="font-semibold text-lg">{title}</h2>

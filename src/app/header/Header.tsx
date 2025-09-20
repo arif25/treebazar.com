@@ -47,14 +47,15 @@ const Header = () => {
               </div>
 
               {/* Cart */}
-              <div className="relative flex items-center gap-1">
-                <HiOutlineShoppingCart className="w-7 h-7 text-white" />
-                <span className="text-base font-medium">Cart</span>
-
-                {/* Cart Count */}
-                <span className="absolute top-[-6px] left-2.5 text-[8px] font-bold text-green-500 bg-white rounded-full p-0.5">
-                  {cartCount}
-                </span>
+              <div className="relative ">
+                <Link href="/mycart" className='flex items-center gap-1'>
+                  <HiOutlineShoppingCart className="w-7 h-7 text-white" />
+                  <span className="text-base font-medium">Cart</span>
+                  {/* Cart Count */}
+                  <span className="absolute top-[-6px] left-2.5 text-[8px] font-bold text-green-500 bg-white rounded-full p-0.5">
+                    {cartCount}
+                  </span>
+                </Link>
               </div>
             </div>
 
