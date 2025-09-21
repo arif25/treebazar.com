@@ -1,6 +1,6 @@
 // pages/index.tsx
 
-import Footer from "@/components/Footer";
+import Footer from "@/app/footer/Footer";
 import Header from "../header/Header";
 import ProductList from "./customerviewed/ProductList";
 import FrequentlyBoughtTogether from "./FrequentlyBroughtTogether";

@@ -43,7 +43,7 @@ const Profile = () => {
           <button className="text-blue-600 text-sm">Edit</button>
         </div>
         <input
-          value={email}
+          // value={email}
           className="w-full border border-gray-200 rounded p-2 bg-gray-100 text-gray-700"
         />
       </div>
@@ -55,7 +55,7 @@ const Profile = () => {
           <button className="text-blue-600 text-sm">Edit</button>
         </div>
         <input
-          value={mobile}
+          // value={mobile} 
           className="w-full border border-gray-200 rounded p-2 bg-gray-100 text-gray-700"
         />
       </div>

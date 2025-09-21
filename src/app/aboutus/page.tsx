@@ -1,13 +1,14 @@
+
 import React from "react";
-import PrivacyPolicy from "./PrivacyPolicy";
+import AboutUs from "./Aboutus";
 import Header from "../header/Header";
-import Footer from "@/app/footer/Footer";
+import Footer from "../footer/Footer";
 
 const page = () =>{
     return(
-        <section  className="bg-gray-50">
+        <section>
             <Header />
-            <PrivacyPolicy />
+            <AboutUs />
             <Footer />
         </section>
     )

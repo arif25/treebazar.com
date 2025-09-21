@@ -1,5 +1,5 @@
 
-import Footer from "@/components/Footer";
+import Footer from "@/app/footer/Footer";
 import Header from "../header/Header";
 import ProductCard from "./ProductCard";
 import Link from "next/link";

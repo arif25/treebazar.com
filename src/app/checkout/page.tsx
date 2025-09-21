@@ -3,7 +3,7 @@ import React from "react";
 import CheckoutPage from "./Checkout";
 import ReviewSection from "./Review";
 import Header from "../header/Header";
-import Footer from "@/components/Footer";
+import Footer from "@/app/footer/Footer";
 import Bodybg from "../assets/bodybg";
 
 const page = () =>{

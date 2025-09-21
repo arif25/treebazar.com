@@ -37,14 +37,15 @@ const Header = () => {
           </div>
           <div className="flex min-w-[600px] gap-12">
             <Dropdown />   
-
             
              <div className="flex items-center gap-12 text-white">
               {/* Returns & Orders */}
-              <div className="leading-tight text-right">
-                <p className="text-sm text-white/60">Returns</p>
-                <p className="text-base font-semibold">& Orders</p>
-              </div>
+              <Link href="orders">
+                <div className="leading-tight text-right">
+                  <p className="text-sm text-white/60">Returns</p>
+                  <p className="text-base font-semibold">& Orders</p>
+                </div>
+              </Link>
 
               {/* Cart */}
               <div className="relative ">

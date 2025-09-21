@@ -3,7 +3,7 @@
 import React from "react";
 import ContactOptions from "./contactus";
 import Header from "../header/Header";
-import Footer from "@/components/Footer";
+import Footer from "@/app/footer/Footer";
 
 const page = () =>{
     return(

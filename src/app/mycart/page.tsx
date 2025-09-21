@@ -3,7 +3,7 @@
 import React from "react";
 import CartPage from "./cart";
 import Header from "../header/Header";
-import Footer from "@/components/Footer";
+import Footer from "@/app/footer/Footer";
 
 const page = ()=>{
     return(
