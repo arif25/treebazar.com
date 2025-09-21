@@ -57,9 +57,9 @@ export default function Page() {
     <main className="p-4 max-w-7xl mx-auto mt-8">
       <section>
         <h2 className="text-lg font-semibold mb-2">Related to items youve viewed</h2>
-        <div className="flex overflow-x-auto space-x-4 pb-4">
+        <div className="flex overflow-x-auto space-x-4 pb-4 gap-2">
           {products.map((product) => (
-            <div key={product.id} className="min-w-[200px] bg-white">
+            <div key={product.id} className="min-w-[294px] bg-white ">
               <Link href='productdetails'>
                 <ProductCard product={product} />     
               </Link>

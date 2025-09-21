@@ -11,17 +11,17 @@ const Profile = () => {
     <div className="w-[1220px] mx-auto p-6 space-y-6 bg-white mt-8"> 
       <h1 className="text-2xl font-semibold">Personal Information</h1>
 
-      <div className="bg-white shadow-md p-6 rounded-lg space-y-4">
+      <div className="bg-white shadow-[0_1px_1px_rgba(0,0,0,0.2)] border border-[#f5f5f5] p-6 rounded-lg space-y-4">
         <div className="flex gap-4">
           <input
             type="text"
             placeholder="First name"
-            className="border rounded p-2 flex-1"
+            className="border border-gray-200 rounded p-2 flex-1"
           />
           <input
             type="text"
             placeholder="Last name"
-            className="border rounded p-2 flex-1"
+            className="border border-gray-200 rounded p-2 flex-1"
           />
         </div>
 
@@ -37,28 +37,26 @@ const Profile = () => {
       </div>
 
       {/* Email Section */}
-      <div className="bg-white shadow-md p-6 rounded-lg space-y-2">
+      <div className="bg-white shadow-[0_1px_1px_rgba(0,0,0,0.2)] border border-[#f5f5f5] p-6 rounded-lg space-y-2">
         <div className="flex justify-between items-center">
           <h2 className="text-lg font-semibold">Email Address</h2>
           <button className="text-blue-600 text-sm">Edit</button>
         </div>
         <input
           value={email}
-          disabled
-          className="w-full border rounded p-2 bg-gray-100 text-gray-700"
+          className="w-full border border-gray-200 rounded p-2 bg-gray-100 text-gray-700"
         />
       </div>
 
       {/* Mobile Section */}
-      <div className="bg-white shadow-md p-6 rounded-lg space-y-2">
+      <div className="bg-white shadow-[0_1px_1px_rgba(0,0,0,0.2)] border border-[#f5f5f5] p-6 rounded-lg space-y-2">
         <div className="flex justify-between items-center">
           <h2 className="text-lg font-semibold">Mobile Number</h2>
           <button className="text-blue-600 text-sm">Edit</button>
         </div>
         <input
           value={mobile}
-          disabled
-          className="w-full border rounded p-2 bg-gray-100 text-gray-700"
+          className="w-full border border-gray-200 rounded p-2 bg-gray-100 text-gray-700"
         />
       </div>
 
