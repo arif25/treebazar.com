@@ -1,15 +1,16 @@
+
 import React from "react";
-import PrivacyPolicy from "./PrivacyPolicy";
+import Custom404 from "./404";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
 const page = () =>{
     return(
-        <section  className="bg-gray-50">
+        <div>
             <Header />
-            <PrivacyPolicy />
+            <Custom404 />
             <Footer />
-        </section>
+        </div>
     )
 }
 

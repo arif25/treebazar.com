@@ -1,13 +1,15 @@
+
+
 import React from "react";
-import PrivacyPolicy from "./PrivacyPolicy";
+import ReturnsPage from "./ReturnRefundPolicy";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
 const page = () =>{
     return(
-        <section  className="bg-gray-50">
+        <section>
             <Header />
-            <PrivacyPolicy />
+            <ReturnsPage />
             <Footer />
         </section>
     )

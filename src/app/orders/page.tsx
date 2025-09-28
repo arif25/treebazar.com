@@ -2,8 +2,8 @@ import React from 'react';
 import SearchBar from './SearchBar'; 
 import OrderCard from './OrderCard';
 import { Order } from './types';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Header from '@/components/header/Header';
+import Footer from '@/components/footer/Footer';
 
 const orders: Order[] = [
   {

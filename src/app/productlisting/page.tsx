@@ -1,8 +1,8 @@
 
-import Footer from "@/app/footer/Footer";
-import Header from "../header/Header";
+import Header from "@/components/header/Header";
 import ProductCard from "./ProductCard";
 import Link from "next/link";
+import Footer from "@/components/footer/Footer";
 
 type Product = {
   id: number;

@@ -1,9 +1,9 @@
 
 import React from "react";
 import Profile from "./Profile";
-import Header from "../header/Header";
-import Footer from "@/app/footer/Footer";
 import Bodybg from "../assets/bodybg";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 const page = () => {
     return(

@@ -1,12 +1,12 @@
 // pages/index.tsx
 
-import Footer from "@/app/footer/Footer";
-import Header from "../header/Header";
+import Header from "@/components/header/Header";
 import ProductList from "./customerviewed/ProductList";
 import FrequentlyBoughtTogether from "./FrequentlyBroughtTogether";
 import ProductDetails from "./ProductDetails";
 import ProductGallery from "./ProductGallery";
 import ProductInfo from "./ProductInfo";
+import Footer from "@/components/footer/Footer";
 
 
 export default function Page() {

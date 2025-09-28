@@ -120,7 +120,7 @@ export default function CreateAccountForm() {
           <a href="#" className="hover:underline">
             Help
           </a>
-          <div className="mt-2">© 1996–2025, Amazon.com, Inc. or its affiliates</div>
+          <div className="mt-2">© 1996–2025, Treebazaar.com, Inc. or its affiliates</div>
         </footer>
       </div>
     </>

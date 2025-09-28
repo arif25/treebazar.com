@@ -1,16 +1,19 @@
+
 import React from "react";
-import PrivacyPolicy from "./PrivacyPolicy";
+import NoResultsPage from "./no-results";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
 const page = () =>{
     return(
-        <section  className="bg-gray-50">
-            <Header />
-            <PrivacyPolicy />
-            <Footer />
+        <>
+        <Header />
+        <section>
+            <NoResultsPage />   
         </section>
+        <Footer />
+        </>
     )
 }
 
-export default page;
+export default page; 

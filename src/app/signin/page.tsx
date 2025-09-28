@@ -18,7 +18,7 @@ export default function SignInPage() {
           <Link href="/termsandconditions">Conditions of Use</Link>
           <Link href="/privacypolicy">Privacy Notice</Link>
           <a href="#">Help</a>
-          <p className="mt-1">© 1996–2025, Amazon.com, Inc. or its affiliates</p>
+          <p className="mt-1">© 1996–2025, Treebazaar.com, Inc. or its affiliates</p>
         </footer>
       </main>
     </>

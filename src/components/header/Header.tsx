@@ -4,9 +4,9 @@ import Image from 'next/image';
 import Dropdown from './Dropdown';
 import SearchBar from './SearchBar';
 import Link from 'next/link';
-import Bodybg from '../assets/bodybg';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { HiOutlineShoppingCart } from 'react-icons/hi';
+import Bodybg from '@/app/assets/bodybg';
 
 
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
             <HiOutlineLocationMarker className="w-5 h-5 text-white/70" />
             <div className="leading-tight">
               <p className="text-sm text-white/60">Delivers to Sayed</p>
-              <p className="text-lg font-semibold text-white">
+              <p className="text-sm font-semibold text-white">
                 Kolkata <span className="font-bold">700001</span>
               </p>
             </div>
@@ -42,8 +42,7 @@ const Header = () => {
               {/* Returns & Orders */}
               <Link href="orders">
                 <div className="leading-tight text-right">
-                  <p className="text-sm text-white/60">Returns</p>
-                  <p className="text-base font-semibold">& Orders</p>
+                  <p className="text-sm text-white">Returns & Orders</p>
                 </div>
               </Link>
 

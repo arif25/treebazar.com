@@ -30,7 +30,7 @@ const ReviewSection: React.FC = () => {
           </p>
 
           <p>
-            See Amazon.in&apos;s
+            See Treebazaar.in&apos;s
             <Link href='' className="text-blue-600 hover:underline">
               Return Policy.
             </Link>
