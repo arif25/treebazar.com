@@ -6,13 +6,17 @@ import React from "react";
 import HomeHeroBanner from "./homeBanner";  
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import BannerList from "./homeBanner";
 
 const HomePage = () =>{
     return(
         <section>
             <Header />
             <HomeHeroBanner />
-            {/* <Banner /> */}
+            {/* <BannerList /> */}
+
+
+
             <ProductGrid />
             <RelatedBanner />
             <Footer />
