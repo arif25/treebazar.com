@@ -11,7 +11,7 @@ export default function Dropdown() {
     <div className="relative inline-block text-left">
       <button
         onClick={toggleDropdown}
-        className="inline-flex justify-center w-full rounded-md px-4 py-2 e text-sm text-white font-medium text-white-700 ">
+        className="cursor-pointer inline-flex justify-center w-full rounded-md px-4 py-2 e text-sm text-white font-medium text-white-700 ">
         Account & Lists
         <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clipRule="evenodd" /></svg>
       </button>
