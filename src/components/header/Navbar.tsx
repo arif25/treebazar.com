@@ -9,7 +9,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const fetchNavItems = async () => {
-      const res = await fetch('/pages/api/header/navitems');
+      const res = await fetch('/api/header/navitems');
       const data = await res.json(); 
       setNavItems(data.navItems);
     };
