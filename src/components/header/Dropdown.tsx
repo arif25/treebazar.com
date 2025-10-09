@@ -1,11 +1,24 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function Dropdown() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleDropdown = () => setIsOpen((prev) => !prev);
+
+  
+  const [accItems, setAccItems] = useState<string[]>([]);
+
+  useEffect(() => {
+    const fetchAccItems = async () => {
+      const res = await fetch('/api/header/accdropdown');
+      const data = await res.json(); 
+      setAccItems(data.accountdropdown);
+    };
+
+    fetchAccItems();
+  }, []);
 
   return (
     <div className="relative inline-block text-left">
@@ -19,15 +32,15 @@ export default function Dropdown() {
       {isOpen && (
         <div className="origin-top-right absolute z-10 right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-white ring-opacity-5">
           <div className="py-1">
-            <Link href="/profile" className="block px-4 py-2 text-sm text-white-700 text-black border-b border-gray-200">My Account</Link>
-            <Link href="/wishlist" className="block px-4 py-2 text-sm text-white-700 text-black border-b border-gray-200">Wishlist</Link>
-            <Link href="/notification" className="block px-4 py-2 text-sm text-white-700 text-black border-b border-gray-200">Notification</Link>
-            <Link href="/404page" className="block px-4 py-2 text-sm text-white-700 text-black border-b border-gray-200">404</Link>
-            <Link href="/paymentsuccess" className="block px-4 py-2 text-sm text-white-700 text-black border-b border-gray-200">Payment Success</Link>
-            <Link href="/noresult" className="block px-4 py-2 text-sm text-white-700 text-black border-b border-gray-200">No results</Link>
-            <Link href="/contactus" className="block px-4 py-2 text-sm text-white-700 text-black border-b border-gray-200">Contact</Link>
-            <Link href="/signin" className="block px-4 py-2 text-sm text-white-700 text-black border-b border-gray-200">Sign in</Link>
-            <Link href="/signup" className="block px-4 py-2 text-sm text-white-700 text-black">Sign Up</Link>
+
+            {accItems.map((item, index) => (
+              <Link href="/" 
+                key={index}
+                className="block px-4 py-2 text-sm text-white-700 text-black border-b border-gray-200 hover:bg-gray-100 transition-colors duration-200">
+                {item}
+              </Link>
+            ))}
+
           </div>
         </div>
       )}

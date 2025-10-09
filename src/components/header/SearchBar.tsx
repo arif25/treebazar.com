@@ -13,6 +13,10 @@ export default function SearchBar() {
   };
 
   return (
+
+
+
+
     <div className="flex items-stretch border border-black rounded-md overflow-hidden w-full max-w-3xl mx-auto">
       {/* Dropdown */}
       <select
