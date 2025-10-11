@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="bg-gray-800 text-white p-2 mx-auto w-full overflow-x-auto whitespace-nowrap custom-scrollbar hide-scrollbar">
       <div className="flex items-center space-x-4 scrollbar-hide">
         {navItems.map((item, index) => (
-          <Link href="/" 
+          <Link href="/productlisting" 
             key={index}
             className="text-sm whitespace-nowrap px-4 py-2 hover:bg-gray-700 rounded">
             {item}

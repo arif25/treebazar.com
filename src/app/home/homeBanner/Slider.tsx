@@ -1,14 +1,7 @@
 'use client'
 
-
-
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-/**
- * SimpleSlider.tsx
- * A minimal responsive image slider with autoplay (slide effect) using Next.js (TypeScript) + Tailwind CSS.
- */
 
 interface Slide {
   src: string;
