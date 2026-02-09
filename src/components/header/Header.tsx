@@ -25,9 +25,9 @@ const Header = () => {
           <div className="flex items-center gap-2 text-white">
             <HiOutlineLocationMarker className="w-5 h-5 text-white/70" />
             <div className="leading-tight">
-              <p className="text-sm text-white/60">Delivers to Sayed</p>
+              <p className="text-sm text-white/60">Free Delivery Above 499</p>
               <p className="text-sm font-semibold text-white">
-                Kolkata <span className="font-bold">700001</span>
+                <a href='#'>Next day delivery Available in kolkata</a>
               </p>
             </div>
           </div>
@@ -36,26 +36,26 @@ const Header = () => {
             <SearchBar />
           </div>
           <div className="flex min-w-[600px] gap-12">
-            <Dropdown />   
+            {/* <Dropdown />    */}
             
              <div className="flex items-center gap-12 text-white">
               {/* Returns & Orders */}
               <Link href="orders">
                 <div className="leading-tight text-right">
-                  <p className="text-sm text-white">Returns & Orders</p>
+                  <p className="text-sm text-white">Get 5 plants just Rs. 699</p>
                 </div>
               </Link>
 
               {/* Cart */}
               <div className="relative ">
-                <Link href="/mycart" className='flex items-center gap-1'>
-                  <HiOutlineShoppingCart className="w-7 h-7 text-white" />
-                  <span className="text-base font-medium">Cart</span>
+                {/* <Link href="/mycart" className='flex items-center gap-1'> */}
+                  {/* <HiOutlineShoppingCart className="w-7 h-7 text-white" /> */}
+                  {/* <span className="text-base font-medium">Cart</span> */}
                   {/* Cart Count */}
-                  <span className="absolute top-[-6px] left-2.5 text-[8px] font-bold text-green-500 bg-white rounded-full p-0.5">
+                  {/* <span className="absolute top-[-6px] left-2.5 text-[8px] font-bold text-green-500 bg-white rounded-full p-0.5">
                     {cartCount}
-                  </span>
-                </Link>
+                  </span> */}
+                {/* </Link> */}
               </div>
             </div>
 

@@ -13,10 +13,6 @@ const HomePage = () =>{
         <section>
             <Header />
             <HomeHeroBanner />
-            {/* <BannerList /> */}
-
-
-
             <ProductGrid />
             <RelatedBanner />
             <Footer />
