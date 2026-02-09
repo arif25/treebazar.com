@@ -6,7 +6,7 @@ export interface Product {
   price: string | number;
   mrp: number;
   discount: number;
-  deliveryDate: string;
+  deliveryDate: string; 
 }
 
 // export interface Productlisting {
@@ -15,5 +15,5 @@ export interface Product {
 //   price: string | number;
 //   image: string;
 //   tag: string;
-//   shipping: string;
+//   shipping: string;   
 // }
