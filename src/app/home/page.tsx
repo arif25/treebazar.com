@@ -12,7 +12,7 @@ const HomePage = () =>{
     return(
         <section>
             <Header />
-            <HomeHeroBanner />
+            <HomeHeroBanner />  
             <ProductGrid />
             <RelatedBanner />
             <Footer />
