@@ -19,7 +19,7 @@ const Header = () => {
         <div className="min-w-full mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-green-600">
             <Link href="./home">
-              <Image src="/images/logo6.png" alt="logo" width={180} height={90} />
+              <Image src="/images/logo10.png" alt="logo" width={180} height={90} />  
             </Link>
           </div>
 
@@ -40,23 +40,17 @@ const Header = () => {
             {/* <Dropdown />    */}
             
              <div className="flex items-center gap-12 text-white">
-              {/* Returns & Orders */}
               <Link href="orders">
                 <div className="leading-tight text-right">
-                  <p className="text-sm text-white">Get 5 plants just Rs. 699</p>
+                  <p className="text-sm text-white">Next day Delivery Available</p>
                 </div>
               </Link>
 
               {/* Cart */}
               <div className="relative ">
-                {/* <Link href="/mycart" className='flex items-center gap-1'> */}
-                  {/* <HiOutlineShoppingCart className="w-7 h-7 text-white" /> */}
-                  {/* <span className="text-base font-medium">Cart</span> */}
-                  {/* Cart Count */}
-                  {/* <span className="absolute top-[-6px] left-2.5 text-[8px] font-bold text-green-500 bg-white rounded-full p-0.5">
-                    {cartCount}
-                  </span> */}
-                {/* </Link> */}
+                <Link href="/mycart" className='flex items-center gap-1'>
+                  <span className="text-base font-medium">Contact / Whatsapp: 91442 91647</span>
+                </Link>
               </div>
             </div>
 
