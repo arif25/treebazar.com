@@ -20,9 +20,10 @@ const ContactOptions = () => {
             Our messaging assistant can quickly solve many issues or direct you to the right person or place.
           </p>
           <p className="text-sm font-semibold text-gray-800 mb-4">Instant chat and always available.</p>
-          <button className="mt-auto bg-white border border-gray-300 text-gray-800 font-medium py-2 px-4 rounded hover:bg-gray-100 transition">
+          {/* <button className="mt-auto bg-white border border-gray-300 text-gray-800 font-medium py-2 px-4 rounded hover:bg-gray-100 transition">
             Start chatting
-          </button> 
+          </button>  */}
+          <a href="https://wa.me/9144291647?text=Hello!" target="_blank" rel="noopener noreferrer" className="mt-auto bg-white border border-gray-300 text-gray-800 font-medium py-2 px-4 rounded hover:bg-gray-100 transition"> 💬 Start chatting</a>
         </div>
 
         {/* Call Option */}
@@ -34,9 +35,13 @@ const ContactOptions = () => {
           <p className="text-gray-700 mb-4">
             We will first get a few details about your issue and then someone will call you right away.
           </p>
-          <button className="mt-auto bg-white border border-gray-300 text-gray-800 font-medium py-2 px-4 rounded hover:bg-gray-100 transition"> 
+          {/* <button className="mt-auto bg-white border border-gray-300 text-gray-800 font-medium py-2 px-4 rounded hover:bg-gray-100 transition"> 
             Call me
-          </button>
+          </button> */}
+          <a href="tel:9144291647" className="mt-auto bg-white border border-gray-300 text-gray-800 font-medium py-2 px-4 rounded hover:bg-gray-100 transition">
+            Call Us: 91442 91647
+          </a>
+
         </div>
       </div>
     </div>
