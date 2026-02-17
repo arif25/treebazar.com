@@ -23,9 +23,9 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   }, [open]);
 
   return (
-    <div className="border-b border-gray-200 py-4">
+    <div className="border-b border-gray-200 py-3"> 
       <button
-        className="flex justify-between items-center w-full text-left text-gray-800 font-medium text-lg focus:outline-none"
+        className="flex justify-between items-center w-full text-left text-gray-800 font-medium text-lg focus:outline-none cursor-pointer"
         onClick={() => setOpen(!open)}
         aria-expanded={open}
         aria-controls={`faq-${question}`}

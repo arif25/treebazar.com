@@ -5,9 +5,11 @@ const AboutUs = () => {
     <section className="bg-white py-16 px-4 md:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Title */}
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+        <h2 className="text-4xl font-bold text-gray-800 mb-4">About Us – Treebazar</h2>
         <p className="text-gray-600 mb-12">
-          At Besnik Consultancy, we take pride in our values – service, integrity, and excellence.
+          Welcome to Treebazar — your trusted destination for healthy plants, beautiful greenery, and nature-inspired living. We are passionate about bringing people closer to nature by offering a wide range of live plants, succulents, cactus varieties, lucky bamboo, indoor plants, and gardening essentials — all carefully selected and nurtured with love. <br /><br />
+
+At Treebazar, we believe that plants are more than decoration — they improve air quality, reduce stress, and bring positive energy into homes and workplaces. Our goal is to make plant ownership simple, affordable, and accessible for everyone, whether you are a beginner or an experienced plant lover.
         </p>
 
         {/* Grid Layout */}
@@ -16,36 +18,27 @@ const AboutUs = () => {
           <div className="space-y-10">
             {/* 1 */}
             <div>
-              <h3 className="text-3xl font-extrabold text-gray-800 mb-2">1.</h3>
-              <h4 className="text-xl font-semibold text-gray-800 mb-1">Who We Are</h4>
-              <p className="text-gray-600">You get a 2-week free trial to kick the Smarty tries. We want you to.</p>
+              {/* <h3 className="text-3xl font-extrabold text-gray-800 mb-2">1.</h3> */}
+              <h4 className="text-xl font-semibold text-gray-800 mb-1">We focus on:</h4>
+              <ul>
+                <li><p className="text-gray-600">• Healthy and well-rooted plants</p></li>
+                <li><p className="text-gray-600">• Secure and safe packaging</p></li>
+                <li><p className="text-gray-600">• Honest product descriptions</p></li>
+                <li><p className="text-gray-600">• Customer-friendly support</p></li>
+                <li><p className="text-gray-600">• Continuous quality improvement</p></li>                
+              </ul>
             </div>
 
-            {/* 2 */}
             <div>
-              <h3 className="text-3xl font-extrabold text-gray-800 mb-2">2.</h3>
-              <h4 className="text-xl font-semibold text-gray-800 mb-1">What Do We Do</h4>
-              <p className="text-gray-600">We give you a free course that guides you through the process.</p>
+              <p className="text-gray-600">Every plant we deliver is checked and packed with care to ensure it reaches you in the best possible condition. We continuously work to improve our growing methods and packaging standards so your plants stay fresh and safe during transit. <br /><br />
+                Treebazar is not just a store — it’s a growing community of plant lovers. Thank you for supporting green living with us.</p>
             </div>
 
-            {/* 3 */}
             <div>
-              <h3 className="text-3xl font-extrabold text-gray-800 mb-2">3.</h3>
-              <h4 className="text-xl font-semibold text-gray-800 mb-1">How Do We Help</h4>
-              <p className="text-gray-600">Use our multimedia lecturers, videos, and coaching sessions.</p>
+              <h4 className="text-xl font-semibold text-gray-800 mb-1">Grow Green. Live Better. 🌿</h4>
+              <p className="text-gray-600">If you want, I can also give you a shorter version or a more premium / more friendly tone version for your website.</p>
             </div>
 
-            {/* 4 */}
-            <div>
-              <h3 className="text-3xl font-extrabold text-gray-800 mb-2">4.</h3>
-              <h4 className="text-xl font-semibold text-gray-800 mb-1">Create success story</h4>
-              <p className="text-gray-600">With access to online learning resources anyone can transfm.</p>
-            </div>
-
-            {/* Learn More Button */}
-            <button className="mt-6 px-6 py-3 bg-white shadow-md text-gray-700 font-medium rounded-md hover:shadow-lg transition">
-              Learn more
-            </button>
           </div>
 
           {/* Images Grid */}

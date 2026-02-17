@@ -44,9 +44,9 @@ const Footer = () => {
                 <li className="w-full">
                     <Link href="faq">Faq</Link>
                 </li>
-                <li className="w-full">
-                  <Link href="shippingaddress">Manage Address</Link>
-                </li>
+                {/* <li className="w-full"> */}
+                  {/* <Link href="shippingaddress">Manage Address</Link> */}
+                {/* </li> */} 
                 <li className="w-full">
                   <Link href="testimonials">Testimonials</Link>
                 </li>
